@@ -1,0 +1,4 @@
+# Enforced in the action layer (Phase 5), not in prompts.
+max_spend_per_task_usd: 0.50
+require_approval_for: [publish, send, pay, delete, deploy]
+sandbox_network: false

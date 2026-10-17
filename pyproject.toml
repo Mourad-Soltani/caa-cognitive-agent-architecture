@@ -1,0 +1,18 @@
+[project]
+name = "caa"
+version = "0.5.0"
+description = "Cognitive Agent Architecture: memory, routing, verification, reflection, real-run harness with CIs and held-out transfer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+# No hard runtime deps. Anthropic calls use stdlib urllib. Optional: pytest for tests.
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["caa*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
